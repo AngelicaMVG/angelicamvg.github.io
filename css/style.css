@@ -1,0 +1,178 @@
+/*animacion de nombre*/
+div[data-liffect="starwars"] h1, h4 {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: starwars 1500ms ease-out both;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-play-state: paused;
+  -moz-animation: starwars 1500ms ease-out both;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-play-state: paused;
+  -o-animation: starwars 1500ms ease-out both;
+  -o-transform-origin: 50% 50%;
+  -o-animation-play-state: paused;
+  animation: starwars 1500ms ease-out both;
+  transform-origin: 50% 50%;
+  animation-play-state: paused; }
+
+div[data-liffect="starwars"].play h1, h4 {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running; }
+
+@-webkit-keyframes starwars {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(200px) scale(3) translateY(180px) rotateX(80deg); }
+  80% {
+    opacity: 1;
+    -webkit-transform: perspective(200px) scale(1) rotateX(60deg); }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(200px) scale(1) rotateX(0deg); } }
+@-moz-keyframes starwars {
+  0% {
+    opacity: 0;
+    -moz-transform: perspective(200px) scale(3) translateY(180px) rotateX(80deg); }
+  80% {
+    opacity: 1;
+    -moz-transform: perspective(200px) scale(1) rotateX(60deg); }
+  100% {
+    opacity: 1;
+    -moz-transform: perspective(200px) scale(1) rotateX(0deg); } }
+@-o-keyframes starwars {
+  0% {
+    opacity: 0;
+    -o-transform: perspective(200px) scale(3) translateY(180px) rotateX(80deg); }
+  80% {
+    opacity: 1;
+    -o-transform: perspective(200px) scale(1) rotateX(60deg); }
+  100% {
+    opacity: 1;
+    -o-transform: perspective(200px) scale(1) rotateX(0deg); } }
+@keyframes starwars {
+  0% {
+    opacity: 0;
+    transform: perspective(200px) scale(3) translateY(180px) rotateX(80deg); }
+  80% {
+    opacity: 1;
+    transform: perspective(200px) scale(1) rotateX(60deg); }
+  100% {
+    opacity: 1;
+    transform: perspective(200px) scale(1) rotateX(0deg); } }
+#aboutme {
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  position: relative;
+  -webkit-animation: mymove 5s;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 5s;
+  /* Standard syntax */ }
+@-webkit-keyframes mymove {
+  from {
+    left: -100%; }
+  to {
+    left: 15px; } }
+@keyframes mymove {
+  from {
+    left: -100%; }
+  to {
+    left: 15px; } }
+body {
+  font-family: Poppins; }
+
+h1 {
+  font-family: 'Dancing Script', cursive; }
+
+.logo {
+  width: 45%;
+  margin-left: 3%; }
+
+#nav-movil, #contacto-movil {
+  display: none; }
+
+#home .parallax-container {
+  height: 550px !important;
+  background-color: rgba(26, 27, 26, 0.54); }
+
+.text-nombre {
+  margin-top: 10%;
+  color: #fff; }
+  .text-nombre .nombre {
+    font-size: 6em; }
+
+.boton-cv {
+  margin: 10px 32%;
+  background: #DC273A !important;
+  text-align: center;
+  transition: all 2s ease-in-out; }
+  .boton-cv .cv {
+    width: 100%;
+    color: #fff; }
+
+.miFoto {
+  width: 100%;
+  margin-top: 30%;
+  border-radius: 10px; }
+
+#skills .parallax-container {
+  height: 680px !important;
+  background-color: rgba(26, 27, 26, 0.14); }
+#skills .estadisticas {
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+  padding: 5%; }
+
+.skill {
+  padding: 5%; }
+  .skill .determinate {
+    background-color: #DC273A !important; }
+  .skill .progress {
+    height: 12px;
+    background-color: #616161; }
+  .skill .icono {
+    position: relative;
+    width: 20%;
+    display: inline; }
+
+.proyectos {
+  padding-bottom: 5%; }
+  .proyectos .card-pad {
+    padding: 2%; }
+  .proyectos .modal {
+    width: 60%;
+    max-height: 100%; }
+    .proyectos .modal .img-modal {
+      width: 50%; }
+
+#contacto {
+  margin-top: -3%;
+  padding: 2% 0;
+  background-color: rgba(26, 27, 26, 0.14); }
+  #contacto .btn-social {
+    margin-left: 8%;
+    background-color: #DC273A;
+    border: 1px solid #616161; }
+  #contacto .btn-git {
+    background-color: #DC273A;
+    border: 1px solid #616161; }
+  #contacto .social-media {
+    padding-bottom: 5%; }
+
+footer {
+  height: 50px;
+  font-size: 1em;
+  padding: .5%;
+  margin-top: -2%; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #nav-movil {
+    display: block; }
+
+  .parallax-container {
+    min-height: 700px; } }
+
+/*# sourceMappingURL=style.css.map */

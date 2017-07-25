@@ -1,0 +1,149 @@
+@import "animaciones";
+
+body {
+  font-family: Poppins;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.logo {
+  width: 45%;
+  margin-left: 3%;
+}
+
+#nav-movil , #contacto-movil {
+  display: none;
+}
+
+#home {
+  .parallax-container {
+    height: 550px !important;
+    background-color: rgba(26, 27, 26, 0.54);
+  }
+}
+
+.text-nombre {
+  margin-top: 10%;
+  color: #fff;
+
+  .nombre {
+    font-size: 6em;
+  }
+}
+
+.boton-cv {
+  margin: 10px 32%;
+  background: #DC273A !important;
+  text-align: center;
+  transition: all 2s ease-in-out;
+
+  .cv {
+    width: 100%;
+    color: #fff;
+  }
+}
+
+.miFoto {
+  width: 100%;
+  margin-top: 30%;
+  border-radius: 10px;
+}
+
+#skills {
+  .parallax-container {
+    height: 680px !important;
+    background-color: rgba(26, 27, 26, 0.14);
+  }
+
+  .estadisticas {
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 2;
+    padding: 5%;
+  }
+}
+
+.skill {
+  padding: 5%;
+
+  .determinate {
+    background-color: #DC273A !important;
+  }
+
+  .progress {
+    height: 12px;
+    background-color: #616161;
+  }
+
+  .icono {
+    position: relative;
+    width: 20%;
+    display: inline;
+  }
+}
+
+
+.proyectos {
+  padding-bottom: 5%;
+
+  .card-pad {
+    padding: 2%;
+  }
+
+  .modal {
+    width: 60%;
+    max-height: 100%;
+
+    .img-modal {
+      width: 50%;
+    }
+  }
+}
+
+#contacto {
+  margin-top: -3%;
+  padding: 2% 0;
+  background-color: rgba(26, 27, 26, 0.14);
+
+  .btn-social {
+    margin-left: 8%;
+    background-color: #DC273A ;
+    border: 1px solid #616161;
+  }
+
+  .btn-git {
+    background-color: #DC273A ;
+    border: 1px solid #616161;
+  }
+  .social-media {
+    padding-bottom: 5%;
+  }
+
+}
+
+footer {
+  height: 50px;
+  font-size: 1em;
+  padding: .5%;
+  margin-top: -2%;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+  #nav-movil {
+    display: block;
+  }
+
+  .parallax-container {
+    min-height: 700px;
+  }
+}
