@@ -1,5 +1,5 @@
 /*animacion de nombre*/
-div[data-liffect="starwars"] h1, h4 {
+div[data-liffect="starwars"] h1, h4, span {
   opacity: 0;
   position: relative;
   -webkit-animation: starwars 1500ms ease-out both;
@@ -15,7 +15,7 @@ div[data-liffect="starwars"] h1, h4 {
   transform-origin: 50% 50%;
   animation-play-state: paused; }
 
-div[data-liffect="starwars"].play h1, h4 {
+div[data-liffect="starwars"].play h1, h4, span {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   -o-animation-play-state: running;
@@ -80,7 +80,8 @@ div[data-liffect="starwars"].play h1, h4 {
   to {
     left: 15px; } }
 body {
-  font-family: Poppins; }
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased; }
 
 h1 {
   font-family: 'Dancing Script', cursive; }
@@ -106,15 +107,19 @@ h1 {
   margin: 10px 32%;
   background: #DC273A !important;
   text-align: center;
-  transition: all 2s ease-in-out; }
+  transition: all 2s ease-in-out;
+  width: 20%; }
   .boton-cv .cv {
     width: 100%;
     color: #fff; }
 
 .miFoto {
   width: 100%;
-  margin-top: 30%;
+  margin-top: 20%;
   border-radius: 10px; }
+
+.aboutme-paragraph {
+  line-height: 1.5; }
 
 #skills .parallax-container {
   height: 680px !important;
@@ -146,7 +151,7 @@ h1 {
     width: 60%;
     max-height: 100%; }
     .proyectos .modal .img-modal {
-      width: 50%; }
+      width: 100%; }
 
 #contacto {
   margin-top: -3%;
@@ -154,11 +159,9 @@ h1 {
   background-color: rgba(26, 27, 26, 0.14); }
   #contacto .btn-social {
     margin-left: 8%;
-    background-color: #DC273A;
-    border: 1px solid #616161; }
+    background-color: #DC273A; }
   #contacto .btn-git {
-    background-color: #DC273A;
-    border: 1px solid #616161; }
+    background-color: #DC273A; }
   #contacto .social-media {
     padding-bottom: 5%; }
 

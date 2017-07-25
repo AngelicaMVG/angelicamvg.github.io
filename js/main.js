@@ -4,7 +4,7 @@ var animationNombre = function() {
       "-moz-animation-delay:" + i * 300 + "ms;" +
       "-o-animation-delay:" + i * 300 + "ms;" +
       "animation-delay:" + i * 300 + "ms;");
-    if (i == $("div[data-liffect] ").size() - 1) {
+    if (i == $("div[data-liffect]").size() - 1) {
       $("div[data-liffect]").addClass("play")
     }
   });
