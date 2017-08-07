@@ -12,9 +12,9 @@ var animationNombre = function() {
 
 var cargarProgressBar = function() {
   var scroll = document.body.scrollTop;
-  if (scroll >= 792) {
+  if (scroll >= 730) {
     $('.skill').show('slow');
-  } else if (scroll < 791) {
+  } else if (scroll < 729) {
     $('.skill').hide();
   }
 }
