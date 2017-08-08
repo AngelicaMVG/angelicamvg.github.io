@@ -12,12 +12,27 @@ var animationNombre = function() {
 
 var cargarProgressBar = function() {
   var scroll = document.body.scrollTop;
-  if (scroll >= 730) {
+  if (scroll >= 690) {
     $('.skill').show('slow');
-  } else if (scroll < 729) {
+  } else if (scroll < 689) {
     $('.skill').hide();
   }
 }
+
+var menuColor = function (){
+  var scroll = document.body.scrollTop;
+
+  if (scroll <= 499) {
+    $('.menu-mov').css('color', 'white');
+  } else if(scroll>500) {
+    $('.menu-mov').css('color', 'black');
+  } else if (scroll >=800) {
+      $('.menu-mov').css('color', 'red');
+  }
+}
+
+
+document.addEventListener("scroll", menuColor);
 document.addEventListener("scroll", cargarProgressBar);
 
 $(document).ready(function() {

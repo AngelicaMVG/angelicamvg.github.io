@@ -81,7 +81,8 @@ div[data-liffect="starwars"].play h1, h4, span {
     left: 15px; } }
 body {
   font-family: Poppins;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
 
 h1 {
   font-family: 'Dancing Script', cursive; }
@@ -90,7 +91,8 @@ h1 {
   width: 45%;
   margin-left: 3%; }
 
-#nav-movil, #contacto-movil {
+#contacto-movil,
+#nav-movil {
   display: none; }
 
 #home .parallax-container {
@@ -118,11 +120,15 @@ h1 {
   margin-top: 20%;
   border-radius: 10px; }
 
+.header {
+  color: #fff; }
+
 .aboutme-paragraph {
+  color: #fff;
   line-height: 1.5; }
 
 #skills .parallax-container {
-  height: 780px !important;
+  height: 750px !important;
   background-color: rgba(26, 27, 26, 0.14); }
 #skills .estadisticas {
   margin: 0;
@@ -168,7 +174,7 @@ h1 {
 footer {
   height: 50px;
   font-size: 1em;
-  padding: .5%;
+  padding: 0.5%;
   margin-top: -2%; }
 
 @media only screen and (max-width: 768px) and (max-width: 1023px) {
@@ -182,7 +188,7 @@ footer {
       position: fixed !important;
       z-index: 10 !important;
       left: 2%;
-      color: #000; }
+      color: #fff; }
 
   .parallax-container {
     min-height: 700px; }
@@ -197,5 +203,45 @@ footer {
 
   #contacto {
     display: none; } }
+@media only screen and (max-width: 767px) {
+  #home .parallax-container {
+    min-height: 80px !important;
+    background-color: #000; }
+  #home .section {
+    background-color: #fff !important; }
+    #home .section .header {
+      color: #000; }
+    #home .section .aboutme-paragraph {
+      color: #000;
+      line-height: 1.5; }
+
+  .miFoto {
+    display: none; }
+
+  .text-nombre {
+    margin-top: 35%;
+    color: white; }
+    .text-nombre .nombre {
+      font-size: 4em; }
+    .text-nombre h4 {
+      font-size: 1.9em; }
+
+  .boton-cv {
+    margin: 10px;
+    width: 60%; }
+
+  #skills .parallax-container {
+    min-height: 1200px; }
+
+  .proyectos .modal {
+    width: 100%; }
+
+  #contacto-movil .btn-social {
+    background-color: #DC273A; }
+  #contacto-movil .btn-git {
+    background-color: #DC273A; } }
+@media only screen and (min-width: 320px) {
+  #skills .parallax-container {
+    min-height: 1300px; } }
 
 /*# sourceMappingURL=style.css.map */
