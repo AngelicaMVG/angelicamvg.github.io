@@ -317,7 +317,7 @@ footer {
   #skills {
     .parallax-container {
       background-color: rgba(14, 14, 14, 0.75);
-      min-height: 1650px;
+      height: 1650px !important;
     }
 }
 }
