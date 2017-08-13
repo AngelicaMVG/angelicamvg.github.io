@@ -238,7 +238,7 @@ footer {
 
   #contacto {
     display: none; } }
-@media only screen and (min-width: 361px) and (max-width: 767px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   #home .parallax-container {
     min-height: 100px !important;
     background-color: #000; }
@@ -267,7 +267,7 @@ footer {
 
   #skills .parallax-container {
     background-color: rgba(14, 14, 14, 0.75);
-    height: 1300px; }
+    height: 1500px; }
     #skills .parallax-container h3 {
       color: #fff !important; }
 
@@ -278,7 +278,11 @@ footer {
     background-color: #DC273A; }
   #contacto-movil .btn-git {
     background-color: #DC273A; } }
-@media only screen and (min-width: 320px) and (max-width: 415px) {
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  #skills .parallax-container {
+    background-color: rgba(14, 14, 14, 0.75);
+    min-height: 1650px; } }
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   #home .parallax-container {
     height: 635px !important;
     background-color: #000; }
@@ -289,7 +293,7 @@ footer {
 
   #skills .parallax-container {
     background-color: rgba(14, 14, 14, 0.75);
-    min-height: 1600px; }
+    min-height: 1500px; }
   #skills h3 {
     color: #fff !important; }
 
