@@ -138,7 +138,8 @@ h1 {
   padding: 5%; }
 
 .skill {
-  padding: 5%; }
+  padding: 5%;
+  display: block !important; }
   .skill .determinate {
     background-color: #DC273A !important; }
   .skill .progress {
